@@ -1,0 +1,124 @@
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #b5afaf;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #776262;
+}
+
+.article-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement{
+    padding: 10px;
+    border-style: dotted;
+    border-color: #776262;
+    text-align: center;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    height: fit-content;
+}
+
+.gallery-controls{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active{
+        display: flex;
+    }
+
+}
+
+.featured-article{
+    border-style: dotted;
+    padding: 20px;
+    border-color: #776262;
+}
+.latest-news{
+    border-style: dotted;
+    padding: 20px;
+    border-color: #776262;
+}

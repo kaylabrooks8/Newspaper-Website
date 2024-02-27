@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Newspaper Name</h1>
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="article.html">Article</a></li>
+            <li> <a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="photo-gallery">
+        <div class="photo"><img src="cat.jpg" alt="cat"></div>
+        <div class="photo"><img src="cat2.jpg" alt="cat2"></div>
+        <div class="photo"><img src="badcat.jpg" alt="cat3"></div>
+        <div class="photo"><img src="stupidcat.jpg" alt="cat4"></div>
+        <div class="photo"><img src="mrfresh.jpg" alt="cat5"></div>
+
+
+
+        <!--buttons-->
+        <div class="gallery-controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function(){
+            document.querySelector('nav ul').classList.toggle('active');
+        })
+    </script>
+     <footer>
+        <p>Contact us at kbroo129@students.kennesaw.edu</p>
+    </footer>
+</body>
+</html>
